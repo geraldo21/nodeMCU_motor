@@ -21,7 +21,11 @@ void setup() {
     digitalWrite(ENABLE_2, LOW);
     
     Serial.begin(115200);
-    Serial.println("Enter values : \n> [  0 :  511 ] FORWARD  \n> [513 : 1023 ] BACKWARD \n>");
+    Serial.print("Enter integer value : ");
+    Serial.print("> FORWARD  [           0 :  511 - dband ]");
+    Serial.print("> BACKWARD [ 513 + dband :         1023 ]\n");
+    Serial.print("DeadBand = ");
+    Serial.println(deadBand);
 }
 
 void loop() {
