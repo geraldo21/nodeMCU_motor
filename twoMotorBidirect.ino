@@ -21,8 +21,8 @@ void setup() {
     digitalWrite(ENABLE_2, LOW);
     
     Serial.begin(115200);
-    Serial.print("Enter integer value : ");
-    Serial.print("> FORWARD  [           0 :  511 - dband ]");
+    Serial.print("Enter integer value : \n");
+    Serial.print("> FORWARD  [           0 :  511 - dband ]\n");
     Serial.print("> BACKWARD [ 513 + dband :         1023 ]\n");
     Serial.print("DeadBand = ");
     Serial.println(deadBand);
